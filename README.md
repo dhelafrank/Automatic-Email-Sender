@@ -28,6 +28,8 @@ This Node.js project leverages nodemailer, node-cron, dotenv, and googleapis to 
    REFRESH_TOKEN=your_oauth_refresh_token
    USER_EMAIL=your_email@gmail.com
    ```
+5. Linux or Unix users could setup the project by running the ```setup.sh``` file in the Project's root directory
+
 
 ## Starting the Script
 
