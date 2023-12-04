@@ -1,5 +1,6 @@
 const cron = require('node-cron');
-let { messages } = require('./messages')
+const { messages } = require('./data/messages')
+const {sendMail} = require(./services/mail-sender)
 
 // Function to select and delete a random message
 const selectAndDeleteRandomMessage = () => {
