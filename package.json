@@ -1,0 +1,26 @@
+{
+  "name": "automatic-email-sender",
+  "version": "1.0.0",
+  "description": "A Node.js project for scheduling and sending emails using node-cron and nodemailer.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "nodemon app"
+  },
+  "dependencies": {
+    "nodemailer": "6.9.7",
+    "dotenv": "16.3.1",
+    "googleapis": "129.0.0",
+    "node-cron": "3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhelafrank/Automatic-Email-Sender.git"
+  },
+  "keywords": ["Nodemailer", "Cron job", "auto email sender"],
+  "author": "dhelafrank",
+  "license": "GPLp"
+}
