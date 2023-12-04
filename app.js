@@ -5,7 +5,7 @@ const {template} = require('./data/mail-template')
 
 
 // Function to select and delete a random message
-const selectAndDeleteRandomMessage = (intendedAddress, mailSubject) => {
+const selectAndDeleteRandomMessage = (recipient Address, mailSubject) => {
   if (messages.length > 0) {
     const randomIndex = Math.floor(Math.random() * messages.length);
     const selectedMessage = messages.splice(randomIndex, 1)[0];
@@ -24,9 +24,9 @@ sendMail(intendedAddress, mailSubject, template(selectedMessage.message, selecte
 
 // Scheduling the cron job to run every day at midnight
 cron.schedule('0 0 * * *', () => {
-  selectAndDeleteRandomMessage("test@gmail.com", "Auto Mail Sender");
+  selectAndDeleteRandomMessage("recipient@example.com", "Auto Mail Sender");
 });
 
 
-//selectAndDeleteRandomMessage("test@gmail.com", "Auto Mail Sender")
+//selectAndDeleteRandomMessage("recipient@example.com", "Auto Mail Sender");
 //module.exports = {selectAndDeleteRandomMessage}
