@@ -1,6 +1,6 @@
 # Automatic Email Sender
 
-This Node.js project leverages nodemailer, node-cron, dotenv, and googleapis to create an automated email sender. It allows users to schedule emails for delivery using cron jobs and provides a straightforward setup.
+This Node.js project leverages nodemailer, node-cron,and googleapis to create an automated email sender. It allows users to schedule emails for delivery using cron jobs and provides a straightforward setup.
 
 ## Installation
 
@@ -48,7 +48,7 @@ yarn start
 
 ### Immediate Email Sending
 
-You can trigger immediate email sending using the provided function:
+You can trigger immediate email sending by uncommenting the function call in ```/app.js```:
 ```javascript
 selectAndDeleteRandomMessage("recipient@example.com", "Auto Mail Sender");
 ```
@@ -61,6 +61,7 @@ cron.schedule('0 0 * * *', () => {
   selectAndDeleteRandomMessage("recipient@example.com", "Auto Mail Sender");
 });
 ```
+you can modify the schedule as you want
 
 ## Function Details
 
