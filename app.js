@@ -15,8 +15,6 @@ const selectAndDeleteRandomMessage = (intendedAddress, mailSubject) => {
 
 sendMail(intendedAddress, mailSubject, template(selectedMessage.message, selectedMessage.author))
 
-
-
 //Other functions could be added here
 
   } else {
@@ -26,8 +24,9 @@ sendMail(intendedAddress, mailSubject, template(selectedMessage.message, selecte
 
 // Scheduling the cron job to run every day at midnight
 cron.schedule('0 0 * * *', () => {
-  selectAndDeleteRandomMessage();
+  selectAndDeleteRandomMessage("test@gmail.com", "Auto Mail Sender");
 });
 
 
-//selectAndDeleteRandomMessage()
+//selectAndDeleteRandomMessage("test@gmail.com", "Auto Mail Sender")
+//module.exports = {selectAndDeleteRandomMessage}
