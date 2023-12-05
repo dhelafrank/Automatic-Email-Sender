@@ -50,7 +50,7 @@ yarn start
 
 You can trigger immediate email sending by uncommenting the function call in ```/app.js```:
 ```javascript
-selectAndDeleteRandomMessage("recipient@example.com", "Auto Mail Sender");
+selectAndDeleteRandomMessage("recipient@example.com", "Email Subject");
 ```
 
 ### Scheduled Email Sending
@@ -58,7 +58,7 @@ selectAndDeleteRandomMessage("recipient@example.com", "Auto Mail Sender");
 To schedule emails, the cron job is set to run every day at midnight:
 ```javascript
 cron.schedule('0 0 * * *', () => {
-  selectAndDeleteRandomMessage("recipient@example.com", "Auto Mail Sender");
+  selectAndDeleteRandomMessage("recipient@example.com", "Email Subject");
 });
 ```
 you can modify the schedule as you want
