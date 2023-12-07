@@ -1,6 +1,8 @@
+const urlencode = require("urlencode")
 const template = (message, author) => {
+let response = ``
 
-let responseUri = `#` //this was intended for a WhatsApp reply
+let responseUri = urlencode.encode(reponse)
 
 
   return `<html>
